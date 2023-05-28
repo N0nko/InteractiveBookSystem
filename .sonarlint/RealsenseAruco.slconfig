@@ -1,0 +1,12 @@
+{
+  "ServerUri": "http://playmania.xyz:9000",
+  "Organization": null,
+  "ProjectKey": "RSPointCloud",
+  "ProjectName": "RSPointCloud",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AYUCMclcp-h_RCkN-82Y",
+      "ProfileTimestamp": "2022-12-11T17:18:15Z"
+    }
+  }
+}

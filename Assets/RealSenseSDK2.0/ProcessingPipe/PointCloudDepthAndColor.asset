@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7867980113874693810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18bce048bd313fc40b6eb0a08d7f83ab, type: 3}
+  m_Name: RsDisparityTransform
+  m_EditorClassIdentifier: 
+  enabled: 1
+  Mode: 0
+--- !u!114 &-7113434202884001123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8658da5fac1924385546d4cfccbea4, type: 3}
+  m_Name: RsDecimationFilter
+  m_EditorClassIdentifier: 
+  enabled: 1
+  _streamFilter: 2
+  _formatFilter: 5
+  _filterMagnitude: 8
+--- !u!114 &-7055049326817284299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18bce048bd313fc40b6eb0a08d7f83ab, type: 3}
+  m_Name: RsDisparityTransform
+  m_EditorClassIdentifier: 
+  enabled: 1
+  Mode: 1
+--- !u!114 &-6073004934678026867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a370b019fb25fbe4384bc45033197fcd, type: 3}
+  m_Name: RsHoleFillingFilter
+  m_EditorClassIdentifier: 
+  enabled: 1
+  _holesFill: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475d71c97716db644863efe7bddfbd70, type: 3}
+  m_Name: PointCloudDepthAndColor
+  m_EditorClassIdentifier: 
+  _processingBlocks:
+  - {fileID: 0}
+  - {fileID: 2504640026285202569}
+  - {fileID: -7113434202884001123}
+  - {fileID: -7055049326817284299}
+  - {fileID: -6073004934678026867}
+  - {fileID: 4936814980488337096}
+  - {fileID: 8503193813226167112}
+  - {fileID: 0}
+  - {fileID: -7867980113874693810}
+  - {fileID: 1256639402598218032}
+  - {fileID: 0}
+  - {fileID: 114654795777124322}
+--- !u!114 &114654795777124322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949c0815228b7334a89a9b09ff0c7fdb, type: 3}
+  m_Name: RsPointCloud
+  m_EditorClassIdentifier: 
+  enabled: 1
+  TextureStream: 2
+  TextureFormat: 5
+  _occlusionRemoval: 2
+--- !u!114 &1256639402598218032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f321dd38a2028949a3ecd8e2905bb5f, type: 3}
+  m_Name: RsAlign
+  m_EditorClassIdentifier: 
+  enabled: 1
+  _alignTo: 2
+--- !u!114 &2504640026285202569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dffddaeb99d79644b99b1d8d18bad86, type: 3}
+  m_Name: RsThresholdFilter
+  m_EditorClassIdentifier: 
+  enabled: 1
+  MinDistance: 0.5
+  MaxDistance: 1
+--- !u!114 &4936814980488337096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f1a4dc738fa514aa5e5d4cc3665aae, type: 3}
+  m_Name: RsSpatialFilter
+  m_EditorClassIdentifier: 
+  enabled: 1
+  _filterMagnitude: 2
+  _filterSmoothAlpha: 0.5
+  _filterSmoothDelta: 20
+  _holeFillingMode: 0
+--- !u!114 &5424529201933939214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f1a4dc738fa514aa5e5d4cc3665aae, type: 3}
+  m_Name: RsSpatialFilter
+  m_EditorClassIdentifier: 
+  enabled: 1
+  _filterMagnitude: 2
+  _filterSmoothAlpha: 0.5
+  _filterSmoothDelta: 20
+  _holeFillingMode: 0
+--- !u!114 &8503193813226167112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec95ba2af23efd408d33138086f1c65, type: 3}
+  m_Name: RsTemporalFilter
+  m_EditorClassIdentifier: 
+  enabled: 1
+  _filterSmoothAlpha: 0.5
+  _filterSmoothDelta: 50
+  _temporalPersistence: 2

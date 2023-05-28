@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 555d23b878964ee42937e01378e5ce57
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Basis Grotesque Arabic Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e1e1c85fb2e9da14d91fcf44471ae3a7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
